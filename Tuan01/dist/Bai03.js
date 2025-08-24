@@ -1,9 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Car {
-    brand;
-    model;
-    year;
     constructor(brand, model, year) {
         this.brand = brand;
         this.model = model;
