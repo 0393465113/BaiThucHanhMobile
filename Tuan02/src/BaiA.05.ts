@@ -6,4 +6,10 @@ const simulateTask = (time: number): Promise<string> => {
   });
 };
 
-simulateTask(2000).then((msg) => console.log(msg));
+Promise.all([
+  simulateTask(1000),
+  simulateTask(1000),
+  simulateTask(1000),
+]).then(results => {
+  console.log("Kết quả:", results);
+});
