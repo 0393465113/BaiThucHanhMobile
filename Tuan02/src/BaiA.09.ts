@@ -9,4 +9,5 @@ const filterEvens = (arr: number[]): Promise<number[]> => {
 filterEvens([1,2,3,4,5,6,7,8,9])
   .then(evens => console.log("Sô chẵn:", evens))
   .catch(err => console.error("Lỗi:", err))
+  //BaiA.10
   .finally(() => console.log("Hoàn thành kiểm tra số chẵn."));

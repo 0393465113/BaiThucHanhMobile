@@ -6,6 +6,7 @@ const simulateTask = (time: number, id: number): Promise<string> => {
   });
 };
 
+//Bài A.06
 Promise.all([
   simulateTask(1000, 1),
   simulateTask(1000, 2),
@@ -13,6 +14,8 @@ Promise.all([
 ]).then(results => {
   console.log("Kết quả:", results);
 });
+
+//BaiA.07
 Promise.race([
   simulateTask(2000, 1),
   simulateTask(1000, 2),
